@@ -4,22 +4,24 @@ This repository is intended as a collection of Gwyddion PyGwy scripts I made, an
 
 For more information about Gwyddion and PyGwy, see the official [Gwyddion website](http://gwyddion.net) and [documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html).
 
-If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, feel free to contact me (also using Issues).
+If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, feel free to file an Issue or contact me at poomerang [at] autistici *dot* org.
 
 
 # PyGwy installation
 
 ### Windows
-To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). The needed installers (and short instructions) are available in the **Python 2 dependencies** folder in this repo, or e.g. [here](https://sourceforge.net/projects/gwyddion/files/pygtk-win32/).
+To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). You can also find the needed installers and short instructions in the **Python 2 dependencies** folder. The installers are also available [on gwyddion's repository](https://sourceforge.net/projects/gwyddion/files/pygtk-win32/).
 
 ### Linux
-Instructions vary depending on the distribution, especially since Python 2 is outdated. If you have instructions for a specific distribution, provide them and I'll add them here.
-The easiest way (and at least in latest Ubuntu versions, the only one I know of) is to install [Gwyddion's FlatPak](https://flathub.org/apps/net.gwyddion.Gwyddion) ([ref.](https://sourceforge.net/p/gwyddion/discussion/pygwy/thread/24a071efea/))
+Instructions vary depending on the distribution, especially since Python 2 is outdated.
+The easiest way (and at least in latest Ubuntu versions, the only one I know of) is to install [Gwyddion's FlatPak](https://flathub.org/apps/net.gwyddion.Gwyddion) (see [forum discussion](https://sourceforge.net/p/gwyddion/discussion/pygwy/thread/24a071efea/))
+
+ If you have instructions for a specific distribution, file an Issue or drop an email at the address indicated above and I'll add them.
 
 
 
 # Scripts available on GitHub
-You can do a 'pygwy' search in GitHub, but I've collected some links here for ease of use, with no intention to steal anyone's credits. Note that they're untested (unless specified):
+I've collected some links here for ease of use, with no intention to steal anyone's credits. You can also do a 'pygwy' search in GitHub, but I filtered out the unfinished/unclear projects. Note that they're untested.
 - [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to batch-apply 'basic' Gwyddion operations (Median level, Gaussian filter, etc.)
 - [Madhavanlabcode/Gwyddion-Scripts](https://github.com/Madhavanlabcode/Gwyddion-Scripts): three-fold symmetrization of an image (intended for FFT)
 - [onakanob/PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
