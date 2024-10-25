@@ -1,0 +1,4 @@
+PyGwy requires Python 2 to work, with some extra dependencies. See http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html for more information
+
+Here are the installers for the latest Python2 available and dependecies (both not developed anymore), for easy retrievement. 
+Note that you need to install the 32-bit version of Gwyddion for PyGwy to work.
