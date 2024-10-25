@@ -1,10 +1,10 @@
 # PyGwy repository
 
-This repository is intended as a collection of Gwyddion PyGwy scripts available in GitHub (and possibly elsewhere).
+This repository is intended as a collection of Gwyddion PyGwy scripts I made, and a reference to those available in GitHub (and possibly elsewhere)
 
 For more information about Gwyddion and PyGwy, see the official [Gwyddion website](http://gwyddion.net) and [documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html).
 
-If you want to contribute by adding suggestions, scripts, or anyhow, or simply would like your link added/removed, feel free to contact me (also using Issues).
+If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, feel free to contact me (also using Issues).
 
 
 # PyGwy installation
