@@ -19,7 +19,7 @@ The easiest way (and at least in latest Ubuntu versions, the only one I know) is
 
 # Scripts available
 
-Currently there's only 2, quite basic scripts available: [SXM_searchFiles](sxm_searchfiles) and [export_profiles](export_profiles).
+Currently there's  2 quite basic scripts available: [SXM_searchFiles](sxm_searchfiles) and [export_profiles](export_profiles).
 
 ### SXM_searchFiles
 This script is intended for searching files and filtering according to some properties (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
