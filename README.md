@@ -4,7 +4,7 @@ This repository is intended as a collection of Gwyddion PyGwy scripts available 
 
 For more information about Gwyddion and PyGwy, see the official [Gwyddion website](http://gwyddion.net) and [documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html).
 
-If you want to contribute anyhow or would like your link removed, feel free to contact me.
+If you want to contribute by adding suggestions, scripts, or anyhow, or simply would like your link added/removed, feel free to contact me (also using Issues).
 
 
 # PyGwy installation
@@ -18,13 +18,24 @@ The easiest way (and at least in latest Ubuntu versions, the only one I know of)
 
 
 
-# Scripts available around
-You can do a 'pygwy' search in GitHub, but I've collected some links here for ease of use. Note that they're untested (unless specified):
+# Scripts available on GitHub
+You can do a 'pygwy' search in GitHub, but I've collected some links here for ease of use, with no intention to steal anyone's credits. Note that they're untested (unless specified):
+- [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to batch-apply 'basic' Gwyddion operations (Median level, Gaussian filter, etc.)
 - [Madhavanlabcode/Gwyddion-Scripts](https://github.com/Madhavanlabcode/Gwyddion-Scripts): three-fold symmetrization of an image (intended for FFT)
-- [PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
-- [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to apply batch Gwyddion operations (Median level, Gaussian filter, etc.) to a batch of files
-- [Drilack7/Python-Scripts-for-Gwyddion](https://github.com/Drilack7/Python-Scripts-for-Gwyddion): 
+- [onakanob/PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
+- [Drilack7/Python-Scripts-for-Gwyddion](https://github.com/Drilack7/Python-Scripts-for-Gwyddion): different scripts for
+  - batch flattening and mean depth calculation 
+  - creating a collage of images
+  - simple batch operations (Change color scale, Scale min/max, or Level)
+  - file actions (Open all files in a folder, Save all files in a folder to .gwy,..)
+- [kugatomodai/gwyddion_convert_many_files](https://github.com/kugatomodai/gwyddion_convert_many_files): batch conversion of files in a folder to png
+- [wampiter/gwyscripts](https://github.com/wampiter/gwyscripts): batch image processing scripts to
+  - export files in a folder to .gwy+png, sorted by channel
+  - stitch images in a line
+  - save all open files to a folder, with a png too
+- [TomVincentUK/gwy2py](https://github.com/TomVincentUK/gwy2py): a script to export Gwyddion data to numpy (.npy) files
 
+If you want your script removed from this list (or added!), please contact me
 
 # My scripts
 
