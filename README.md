@@ -10,7 +10,7 @@ If you find any bugs/issues, feel free to contact me.
 # PyGwy installation
 
 ### Windows
-To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). The needed installers (and short instructions) are available in the **Python 2 dependencies** folder in this repo.
+To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). The needed installers (and short instructions) are available in the **[Python 2 dependencies](https://github.com/emmegamma/PyGwy-repo/tree/main/Python%202%20dependencies)** folder in this repo.
 
 ### Linux
 Instructions may vary depending on the distribution, especially since Python 2 is outdated.
