@@ -2,7 +2,7 @@
 
 This repository is intended as a collection of Gwyddion PyGwy [**scripts I made**](#my-scripts), and a reference to [those available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
 
-For more information about Gwyddion and PyGwy, see the official [Gwyddion website](http://gwyddion.net) and [documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html).
+For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html) on [Gwyddion's website](http://gwyddion.net).
 
 If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, feel free to file an Issue or contact me at poomerang [at] autistici *dot* org.
 
