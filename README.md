@@ -21,7 +21,7 @@ The easiest way (and at least in latest Ubuntu versions, the only one I know of)
 
 
 # Scripts available on GitHub
-I've collected some links here for ease of use, with no intention to steal anyone's credits. You can also do a 'pygwy' search in GitHub, but I filtered out the unfinished/unclear projects. Note that they're untested.
+I've collected some links here for ease of use, with no intention to steal anyone's credits. You can also do a 'pygwy' search in GitHub, but I filtered out the unfinished/unclear projects. Note that they are **untested**.
 - [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to batch-apply 'basic' Gwyddion operations (Median level, Gaussian filter, etc.)
 - [Madhavanlabcode/Gwyddion-Scripts](https://github.com/Madhavanlabcode/Gwyddion-Scripts): three-fold symmetrization of an image (intended for FFT)
 - [onakanob/PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
