@@ -22,21 +22,21 @@ The easiest way (and at least in latest Ubuntu versions, the only one I know) is
 Currently there's  2 quite basic scripts available: [SXM_searchFiles](sxm_searchfiles) and [export_profiles](export_profiles).
 
 ### SXM_searchFiles
-This script is intended for searching files and filtering according to some properties (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
+This script is intended for **searching files and filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
 
-It is designed for Nanonis .SXM files, also after saving them as .gwy, but can be easily adapted to other formats.
+It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats.
 
-Also it can:
+It can also:
 - Search recursively through folders (by using `*` in the folder search)
-- Copy the files found to a different folder
+- Copy the found files to a different folder
   - this can be useful when searching recursively for a specific image or set of images, e.g. an overview for a presentation/publication or all images of - say - defects available, to collect them in one place for a later check
 - Customize output (print filename, setpoint, size/speed, etc.)
 
-It uses package [quantities](https://pypi.org/project/quantities/) to convert units, though it can be scraped out. Note that `pip` seemingly tries to install v.0.13 which gives an error, so I suggest trying v. 0.12:
+It uses package [quantities](https://pypi.org/project/quantities/) to convert units, though it can probably be scraped out. Note that `pip` seemingly tries to install v.0.13 which doesn't install, so I suggest trying v. 0.12:
 
 `python -m pip install quantities==0.12`
 
-The first part of the file contains the options/customizations available, with comments that should make them understandable
+The first part of the file contains the options/customizations available, with comments that should make them understandable:
 ```
 ### Folder and filetype ###
 # Set folder(s) to search (use *\* for recursive searches) 
@@ -47,7 +47,7 @@ filetype = '.sxm'
 #filetype = 'both' 
 ```
 
-The script can also run as standalone in Python, the required libraries are loaded in the first 3 lines of the file
+The script can also run as standalone in Python, the required libraries are loaded in the first 3 lines of the file (make sure Gwyddion's install folder corresponds in your system)
 
 ### export_profiles
 My very first script: used to export the profiles (Graphs) in ASCII .txt files.
