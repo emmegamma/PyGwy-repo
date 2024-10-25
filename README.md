@@ -13,8 +13,8 @@ If you find any bugs/issues, feel free to contact me.
 To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). The needed installers (and short instructions) are available in the **[Python 2 dependencies](https://github.com/emmegamma/PyGwy-repo/tree/main/Python%202%20dependencies)** folder in this repo.
 
 ### Linux
-Instructions may vary depending on the distribution, especially since Python 2 is outdated.
-The easiest way (and at least in latest Ubuntu versions, the only one I know) is to install [Gwyddion's FlatPak](https://flathub.org/apps/net.gwyddion.Gwyddion) ([ref.](https://sourceforge.net/p/gwyddion/discussion/pygwy/thread/24a071efea/))
+Instructions vary depending on the distribution, especially since Python 2 is outdated. If you have instructions for a specific distribution, provide them and I'll add them here.
+The easiest way (and at least in latest Ubuntu versions, the only one I know of) is to install [Gwyddion's FlatPak](https://flathub.org/apps/net.gwyddion.Gwyddion) ([ref.](https://sourceforge.net/p/gwyddion/discussion/pygwy/thread/24a071efea/))
 
 
 # Scripts available
