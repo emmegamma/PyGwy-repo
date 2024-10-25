@@ -4,20 +4,29 @@ This repository is intended as a collection of Gwyddion PyGwy scripts available 
 
 For more information about Gwyddion and PyGwy, see the official [Gwyddion website](http://gwyddion.net) and [documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html).
 
-If you find any bugs/issues, feel free to contact me.
+If you want to contribute anyhow or would like your link removed, feel free to contact me.
 
 
 # PyGwy installation
 
 ### Windows
-To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). The needed installers (and short instructions) are available in the **[Python 2 dependencies](https://github.com/emmegamma/PyGwy-repo/tree/main/Python%202%20dependencies)** folder in this repo.
+To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). The needed installers (and short instructions) are available in the **Python 2 dependencies** folder in this repo, or e.g. [here](https://sourceforge.net/projects/gwyddion/files/pygtk-win32/).
 
 ### Linux
 Instructions vary depending on the distribution, especially since Python 2 is outdated. If you have instructions for a specific distribution, provide them and I'll add them here.
 The easiest way (and at least in latest Ubuntu versions, the only one I know of) is to install [Gwyddion's FlatPak](https://flathub.org/apps/net.gwyddion.Gwyddion) ([ref.](https://sourceforge.net/p/gwyddion/discussion/pygwy/thread/24a071efea/))
 
 
-# Scripts available
+
+# Scripts available around
+You can do a 'pygwy' search in GitHub, but I've collected some links here for ease of use. Note that they're untested (unless specified):
+- [Madhavanlabcode/Gwyddion-Scripts](https://github.com/Madhavanlabcode/Gwyddion-Scripts): three-fold symmetrization of an image (intended for FFT)
+- [PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
+- [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to apply batch Gwyddion operations (Median level, Gaussian filter, etc.) to a batch of files
+- [Drilack7/Python-Scripts-for-Gwyddion](https://github.com/Drilack7/Python-Scripts-for-Gwyddion): 
+
+
+# My scripts
 
 Currently there's  2 quite basic scripts available: [SXM_searchFiles](sxm_searchfiles) and [export_profiles](export_profiles).
 
