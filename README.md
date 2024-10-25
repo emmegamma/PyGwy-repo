@@ -1,6 +1,6 @@
 # PyGwy repository
 
-This repository is intended as a collection of Gwyddion PyGwy scripts I made, and a reference to those available in GitHub (and possibly elsewhere)
+This repository is intended as a collection of Gwyddion PyGwy [**scripts I made**](#my-scripts), and a reference to [those available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
 
 For more information about Gwyddion and PyGwy, see the official [Gwyddion website](http://gwyddion.net) and [documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html).
 
@@ -46,10 +46,10 @@ Currently there's  2 quite basic scripts available: [SXM_searchFiles](sxm_search
 ### SXM_searchFiles
 This script is intended for **searching files and filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
 
-It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats.
+It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **please email me the final result!!** I'd love to make a full search function of this)
 
 It can also:
-- Search recursively through folders (by using `*` in the folder search)
+- Search recursively through folders (by using `\*` and escape characters in the folder search)
 - Copy the found files to a different folder
   - this can be useful when searching recursively for a specific image or set of images, e.g. an overview for a presentation/publication or all images of - say - defects available, to collect them in one place for a later check
 - Customize output (print filename, setpoint, size/speed, etc.)
@@ -72,7 +72,6 @@ filetype = '.sxm'
 The script can also run as standalone in Python, the required libraries are loaded in the first 3 lines of the file (make sure Gwyddion's install folder corresponds in your system)
 
 ### export_profiles
-My very first script: used to export the profiles (Graphs) in ASCII .txt files.
-I needed it for a very tedious job which hopefully nobody else has to ever do, but it may come useful as codebase/to export many profiles to import in another program (Igor or similar).
+My very first script: to **export all the profiles** (Graphs) in open files **to ASCII .txt files**. Intended for import in another program (IgorPro or similar).
 
-It works with open files only, either recursively (all open files) or the active one. It exports the profiles as OriginaleFilename_prof_xx.txt
+It works with open files only, either recursively (all open files) or the active one. The profiles are exported as OriginaleFilename_prof_xx.txt
