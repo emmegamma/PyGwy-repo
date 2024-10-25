@@ -28,8 +28,8 @@ I've collected some links here for ease of use, with no intention to steal anyon
 - [Drilack7/Python-Scripts-for-Gwyddion](https://github.com/Drilack7/Python-Scripts-for-Gwyddion): different scripts for
   - batch flattening and mean depth calculation 
   - creating a collage of images
-  - simple batch operations (Change color scale, Scale min/max, or Level)
-  - file actions (Open all files in a folder, Save all files in a folder to .gwy,..)
+  - simple batch operations (change color scale, scale min/max, or Level)
+  - file actions (open all files in a folder, save all files in a folder to .gwy, etc.)
 - [kugatomodai/gwyddion_convert_many_files](https://github.com/kugatomodai/gwyddion_convert_many_files): batch conversion of files in a folder to png
 - [wampiter/gwyscripts](https://github.com/wampiter/gwyscripts): batch image processing scripts to
   - export files in a folder to .gwy+png, sorted by channel
