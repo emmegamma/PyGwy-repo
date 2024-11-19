@@ -1,10 +1,10 @@
 # PyGwy repository
 
-This repository is intended as a collection of Gwyddion PyGwy [**scripts I made**](#my-scripts), and a reference to [those available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
+This repository is intended as a collection of Gwyddion PyGwy [**scripts I made**](#scripts-in-this-repository), and a reference to [those available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
 
 For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html) on [Gwyddion's website](http://gwyddion.net).
 
-If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, feel free to file an Issue or contact me at poomerang [at] autistici *dot* org.
+If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, you can file an Issue or **contact me** at: poomerang [at] autistici *dot* org.
 
 
 # PyGwy installation
@@ -39,14 +39,14 @@ I've collected some links here for ease of use, with no intention to steal anyon
 
 If you want your script removed from this list (or added!), please contact me
 
-# My scripts
+# Scripts in this repository
 
-Currently there's  2 quite basic scripts available: [SXM_searchFiles](sxm_searchfiles) and [export_profiles](export_profiles).
+Currently there's  2 quite basic scripts available: [SXM_searchFiles](#sxm_searchfiles) and [export_profiles](#export_profiles).
 
 ### SXM_searchFiles
 This script is intended for **searching files and filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
 
-It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **please email me the final result!!** I'd love to make a full search function of this)
+It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **you can email me to ask or send the final result** I'd love to make a full search function of this)
 
 It can also:
 - Search recursively through folders (by using `\*` and escape characters in the folder search)
