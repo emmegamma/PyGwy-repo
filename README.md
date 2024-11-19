@@ -46,7 +46,7 @@ Currently there's  2 quite basic scripts available: [SXM_searchFiles](#sxm_searc
 ### SXM_searchFiles
 This script is intended for **searching files and filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
 
-It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **you can email me to ask or send the final result** I'd love to make a full search function of this)
+It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **you can email me to ask or send the final result**: I'd love to make a full search function of this)
 
 It can also:
 - Search recursively through folders (by using `\*` and escape characters in the folder search)
