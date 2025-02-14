@@ -55,11 +55,11 @@ It can also:
 - Customize output (print filename, setpoint, size/speed, etc.)
 
 The first part of the file contains the options/customizations available, with comments that should make them understandable:
-```
+```python
 ### Folder and filetype ###
 # Set folder(s) to search (use *\* for recursive searches) 
 # and filetype (uncomment as needed)
-folder = r'C:\Users\Myuser\DATA\STM\*\2024*'
+folder = r'C:\Users\Myuser\DATA\STM\2024-10-*'
 #filetype = '.gwy' 
 filetype = '.sxm' 
 #filetype = 'both' 
