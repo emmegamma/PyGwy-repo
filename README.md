@@ -54,10 +54,6 @@ It can also:
   - this can be useful when searching recursively for a specific image or set of images, e.g. an overview for a presentation/publication or all images of - say - defects available, to collect them in one place for a later check
 - Customize output (print filename, setpoint, size/speed, etc.)
 
-It uses package [quantities](https://pypi.org/project/quantities/) to convert units, though it can probably be scraped out. Note that `pip` seemingly tries to install v.0.13 which doesn't install, so I suggest trying v. 0.12:
-
-`python -m pip install quantities==0.12`
-
 The first part of the file contains the options/customizations available, with comments that should make them understandable:
 ```
 ### Folder and filetype ###
@@ -69,7 +65,9 @@ filetype = '.sxm'
 #filetype = 'both' 
 ```
 
-The script can also run as standalone in Python, the required libraries are loaded in the first 3 lines of the file (make sure Gwyddion's install folder corresponds in your system)
+The script can also run as standalone in Python, the required libraries are loaded in the first lines of the file (make sure Gwyddion's install folder corresponds in your system)
+
+I used to exploit package [quantities](https://pypi.org/project/quantities/) for unit conversion but I removed it to make the script work out of the box without dealing with dependencies/package installation.
 
 ### export_profiles
 My very first script: to **export all the profiles** (Graphs) in open files **to ASCII .txt files**. Intended for import in another program (IgorPro or similar).
