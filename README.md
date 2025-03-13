@@ -1,6 +1,6 @@
 # PyGwy repository
 
-This repository is intended as a collection of [**Gwyddion PyGwy scripts I made**](#scripts-in-this-repository), and a reference to [other pygwy available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
+This repository is intended as a collection of **Gwyddion PyGwy scripts**: [those available in GitHub](#scripts-available-on-github) (and possibly elsewhere) and [some that I made](#scripts-in-this-repository).
 
 For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html) on Gwyddion's website.
 
@@ -66,8 +66,6 @@ filetype = '.sxm'
 ```
 
 The script can also run as standalone in Python, the required libraries are loaded in the first lines of the file (make sure Gwyddion's install folder corresponds in your system)
-
-I used to exploit package [quantities](https://pypi.org/project/quantities/) for unit conversion but I removed it to make the script work out of the box without dealing with dependencies/package installation.
 
 ### export_profiles
 My very first script: to **export all the profiles** (Graphs) in open files **to ASCII .txt files**. Intended for import in another program (IgorPro or similar).
