@@ -1,10 +1,10 @@
 # PyGwy repository
 
-This repository is intended as a collection of Gwyddion PyGwy [**scripts I made**](#scripts-in-this-repository), and a reference to [those available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
+This repository is intended as a collection of [**Gwyddion PyGwy scripts I made**](#scripts-in-this-repository), and a reference to [other pygwy available in GitHub](#scripts-available-on-github) (and possibly elsewhere)
 
-For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html) on [Gwyddion's website](http://gwyddion.net).
+For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html) on Gwyddion's website.
 
-If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, you can file an Issue or **contact me** at: poomerang [at] autistici *dot* org.
+If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, you can file an Issue or **contact me** at: emmegamma [at] inventati *dot* org.
 
 
 # PyGwy installation
