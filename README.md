@@ -44,7 +44,7 @@ If you want your script removed from this list (or added!), please contact me
 Currently there's  2 quite basic scripts available: [SXM_searchFiles](#sxm_searchfiles) and [export_profiles](#export_profiles).
 
 ### SXM_searchFiles
-This script is intended for **searching files and filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
+This script is intended for **searching files** and **filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
 
 It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **you can email me to ask or send the final result**: I'd love to make a full search function of this)
 
