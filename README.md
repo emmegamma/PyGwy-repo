@@ -47,7 +47,11 @@ It works with open files only, either recursively (all open files) or the active
 
 
 # Scripts available on GitHub
-I've collected some links here for ease of use, with no intention to steal anyone's credits. You can also do a 'pygwy' search in GitHub, but I filtered out the unfinished/unclear projects. Note that, unless otherwise stated, they are **untested**.
+I've collected some links here for ease of use, with no intention to steal anyone's credits. It's mostly the result of a 'pygwy' search in GitHub, filtering out unfinished/unclear projects. If you want your script added to (or removed from) this list, feel free to contact me.
+
+Note that they are **untested** unless otherwise stated
+
+- [MohamedAzizAllani/AutoProcess_plugin-Gwyddion](https://github.com/MohamedAzizAllani/AutoProcess_plugin-Gwyddion): a full, great plugin equipped with GUI to apply several operations (color gradient and range, crop, renaming, or even custom macros) to a series of files or channels to be selected. Tested and working on Gwyddion 2.69
 - [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to batch-apply 'basic' Gwyddion operations (Median level, Gaussian filter, etc.)
 - [Madhavanlabcode/Gwyddion-Scripts](https://github.com/Madhavanlabcode/Gwyddion-Scripts): three-fold symmetrization of an image (intended for FFT)
 - [onakanob/PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
@@ -56,14 +60,12 @@ I've collected some links here for ease of use, with no intention to steal anyon
   - creating a collage of images
   - simple batch operations (change Color scale, Scale min/max, or Level)
   - file actions (Open all files in a folder, Save all files in a folder to .gwy, etc.)
-- [kugatomodai/gwyddion_convert_many_files](https://github.com/kugatomodai/gwyddion_convert_many_files): batch conversion of files in a folder to png (not working and using deprecated methods, use only for inspiration)
+- [kugatomodai/gwyddion_convert_many_files](https://github.com/kugatomodai/gwyddion_convert_many_files): batch conversion of files in a folder to png. Not working and using deprecated methods, use only for inspiration
 - [wampiter/gwyscripts](https://github.com/wampiter/gwyscripts): batch image processing scripts to
   - export files in a folder to .gwy+png, sorted by channel
   - stitch images in a line
   - save all open files to a folder, with a png too
 - [TomVincentUK/gwy2py](https://github.com/TomVincentUK/gwy2py): a script to export Gwyddion data to numpy (.npy) files
-
-If you want your script removed from this list (or added!), please contact me
 
 
 # PyGwy installation
