@@ -6,14 +6,14 @@ If you want to contribute by adding suggestions, scripts, or in any other form, 
 
 For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html). See below for [Pygwy installation instructions](#pygwy-installation).
 
-# Scripts in this repository
+# Scripts in this directory (self-made)
 
-Currently the scripts available are: [SXM_searchFiles](#sxm_searchfiles), [batch_export_to_image](#batch_export_to_image), and [export_profiles](#export_profiles).
+Currently three scripts are available: [SXM_searchFiles](#sxm_searchfiles), [batch_export_to_image](#batch_export_to_image), and [export_profiles](#export_profiles).
 
 ### SXM_searchFiles
-This script is intended for **searching files** and **filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
+This is intended for **searching files** and **filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
 
-It is designed for **Nanonis .SXM** files, also after saving them as .gwy, but can be easily adapted to other formats (in this case, **you can email me to ask or send the final result**: I'd love to make a full search function of this)
+It is designed for Nanonis .SXM files, also after saving them as .gwy, but **can be adapted** easily to other formats (in this case, you can **email me** to ask or send the final result: I'd love to make a full search function of this)
 
 It can also:
 - Search recursively through folders (by using `\*` and escape characters in the folder search)
