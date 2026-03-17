@@ -1,21 +1,20 @@
 # PyGwy repository
 
-This repository is intended as a collection of **Gwyddion PyGwy scripts**: [some that I made](#scripts-in-this-repository) and those that I [found on GitHub](#scripts-available-on-github).
+This repository is intended as a collection of **Gwyddion PyGwy scripts**: some [that I made](#scripts-in-this-directory) and some [available on the web](#scripts-repository) (GitHub).
 
-If you want to contribute by adding suggestions, scripts, or in any other form, or simply would like your link added/removed, you can file an Issue or **contact me** at: emmegamma [at] inventati *dot* org.
+If you want to contribute by adding scripts, suggestions, or in any other form (or would like your link removed!), you can contact me (emmegamma [at] inventati *dot* org) or file an Issue.
 
 For more information about Gwyddion and PyGwy, see the [official documentation](http://gwyddion.net/documentation/user-guide-en/pygwy.html). See below for [Pygwy installation instructions](#pygwy-installation).
 
-# Scripts in this directory (self-made)
+# Scripts in this directory
 
 Currently three scripts are available: [SXM_searchFiles](#sxm_searchfiles), [batch_export_to_image](#batch_export_to_image), and [export_profiles](#export_profiles).
 
 ### SXM_searchFiles
-This is intended for **searching files** and **filtering according to some properties** (filename, real image size, setpoint, scantime, comments) through one or multiple folders. It can be useful e.g. when scraping through old data.
+This is intended for **searching files and filtering** according to some properties (filename, real image size, setpoint, scantime, comments), through one or multiple folders. It can be useful e.g. when scraping through old data.
+It is designed for Nanonis .SXM files/metadata (so also after saving them as .gwy), but **can be adapted** to other formats (I have never needed this, but if you do, I'd be glad to hear about it: I'd like to make it into a 'modular' search script, I just haven't had the time/need)
 
-It is designed for Nanonis .SXM files, also after saving them as .gwy, but **can be adapted** easily to other formats (in this case, you can **email me** to ask or send the final result: I'd love to make a full search function of this)
-
-It can also:
+It can:
 - Search recursively through folders (by using `\*` and escape characters in the folder search)
 - Copy the files to a target folder (this can be useful when searching recursively, to collect all files/images in one place for a later check)
 - Customize output (print filename, setpoint, size/speed, etc.)
@@ -31,27 +30,34 @@ filetype = '.sxm'
 #filetype = 'both' 
 ```
 
-The script can also run as standalone in Python, the required libraries are loaded in the first lines of the file (make sure Gwyddion's install folder corresponds in your system)
+The script can also run as standalone in Python, the required libraries are loaded in the first lines of the file (make sure Gwyddion's install folder is correct for your system)
 
 ### batch_export_to_image
-A script to batch export .gwy (or .sxm) files in a folder to images, inspired by kugatomodai/gwyddion_convert_many_files (see below in the repo list). 
+A script to export .gwy (or .sxm) files in a folder to images, inspired by kugatomodai/gwyddion_convert_many_files (see below in the repo list). 
 
-The filetype/extension of the images is `.jpg` by default but can be changed in variable `imagefile`, line 76.
+The filetype/extension of the images is `.jpg` by default (customize variable `imagefile`, line 76).
 
 It can filter filenames (similar to the script above), and has options to overwrite/not overwrite and for dry run (ultrasafe).
 
 ### export_profiles
-My very first script: to **export all the profiles** (Graphs) in open files **to ASCII .txt files**. Intended for import in another program (IgorPro or similar).
+My very first script: to export all the profiles (Graphs) in open files to ASCII .txt files. Intended for export to some other program (IgorPro or similar).
 
 It works with open files only, either recursively (all open files) or the active one. The profiles are exported as OriginaleFilename_prof_xx.txt
 
 
-# Scripts available on GitHub
-I've collected some links here for ease of use, with no intention to steal anyone's credits. It's mostly the result of a 'pygwy' search in GitHub, filtering out unfinished/unclear projects. If you want your script added to (or removed from) this list, feel free to contact me.
+# Scripts repository
+Here are some scripts contributed by other authors and some that I've collected for ease of use, with no intention to steal anyone's credits (it's mostly the result of a 'pygwy' search in GitHub after discarding obsolete projects). If you want your script added to (or removed from) this list, feel free to contact me.
 
-Note that they are **untested** unless otherwise stated
+Note: they are **untested** unless otherwise stated
 
-- [MohamedAzizAllani/AutoProcess_plugin-Gwyddion](https://github.com/MohamedAzizAllani/AutoProcess_plugin-Gwyddion): a full, great plugin equipped with GUI to apply several operations (color gradient and range, crop, renaming, or even custom macros) to a series of files or channels to be selected. Tested and working on Gwyddion 2.69
+### Contributed
+- [MohamedAzizAllani/AutoProcess_plugin-Gwyddion](https://github.com/MohamedAzizAllani/AutoProcess_plugin-Gwyddion): a full, great plugin equipped with GUI to apply several operations (color gradient and range, crop, renaming, or even custom macros) to a series of files or channels to be selected. 
+<br> Tested and working on Gwyddion 2.69
+- [rohanplatts/Python-in-Gwyddion](https://github.com/rohanplatts/Python-in-Gwyddion): not really PyGwy, but a very useful tool: a Gwyddion module that executes any python script in any python environment of your choice (e.g. installed with conda/anaconda: so also python 3), in Gwyddion. The script is executed on the open image, and reads the output back in Gwyddion. It's compiled for Windows 64bit only, but that means having some python available also in 64bit installations
+- [rohanplatts/nanonis-file-conversion](https://github.com/rohanplatts/nanonis-file-conversion): also not really, but possibly useful: scripts to convert Nanonis .dat files (human-readable) to both .sxm (Gwyddion-readable) and .jpg
+
+
+### Other scripts in GitHub
 - [harripj/pygwy](https://github.com/harripj/pygwy): a series of scripts, seemingly to batch-apply 'basic' Gwyddion operations (Median level, Gaussian filter, etc.)
 - [Madhavanlabcode/Gwyddion-Scripts](https://github.com/Madhavanlabcode/Gwyddion-Scripts): three-fold symmetrization of an image (intended for FFT)
 - [onakanob/PyGwyBatch](https://github.com/onakanob/PyGwyBatch): a batch handler to apply a single PyGwy/Python function to multiple files
@@ -60,7 +66,8 @@ Note that they are **untested** unless otherwise stated
   - creating a collage of images
   - simple batch operations (change Color scale, Scale min/max, or Level)
   - file actions (Open all files in a folder, Save all files in a folder to .gwy, etc.)
-- [kugatomodai/gwyddion_convert_many_files](https://github.com/kugatomodai/gwyddion_convert_many_files): batch conversion of files in a folder to png. Not working and using deprecated methods, use only for inspiration
+- [kugatomodai/gwyddion_convert_many_files](https://github.com/kugatomodai/gwyddion_convert_many_files): batch conversion of files in a folder to png. 
+<br> Not working and using deprecated methods, use only for inspiration
 - [wampiter/gwyscripts](https://github.com/wampiter/gwyscripts): batch image processing scripts to
   - export files in a folder to .gwy+png, sorted by channel
   - stitch images in a line
@@ -71,7 +78,7 @@ Note that they are **untested** unless otherwise stated
 # PyGwy installation
 
 ### Windows
-To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). You can also find the needed installers and short instructions in the **Python 2 dependencies** folder. The installers are also available [on gwyddion's repository](https://sourceforge.net/projects/gwyddion/files/pygtk-win32/).
+To install PyGwy correctly on Windows, follow the official [documentation](http://gwyddion.net/documentation/user-guide-en/installation-ms-windows.html). You can also find the needed installers and short instructions in the **Python 2 dependencies** folder. The installers are also available [on gwyddion's repository](https://sourceforge.net/projects/gwyddion/files/pygtk-win32/). Note that you need Gwyddion 32bit for PyGwy to work (not available in the 64bit installation).
 
 ### Linux
 Instructions vary depending on the distribution, especially since Python 2 is outdated.
