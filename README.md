@@ -1,6 +1,6 @@
 # PyGwy repository
 
-This repository is intended as a collection of **Gwyddion PyGwy scripts**: some [that I made](#scripts-in-this-directory) and some [available on the web](#scripts-repository) (GitHub).
+This repository is intended as a collection of **Gwyddion PyGwy scripts**: some [that I made](#scripts-in-this-directory) and some [contributed/available on the web](#scripts-repository) (GitHub).
 
 If you want to contribute by adding scripts, suggestions, or in any other form (or would like your link removed!), you can contact me (emmegamma [at] inventati *dot* org) or file an Issue.
 
@@ -12,12 +12,13 @@ Currently three scripts are available: [SXM_searchFiles](#sxm_searchfiles), [bat
 
 ### SXM_searchFiles
 This is intended for **searching files and filtering** according to some properties (filename, real image size, setpoint, scantime, comments), through one or multiple folders. It can be useful e.g. when scraping through old data.
-It is designed for Nanonis .SXM files/metadata (so also after saving them as .gwy), but **can be adapted** to other formats (I have never needed this, but if you do, I'd be glad to hear about it: I'd like to make it into a 'modular' search script, I just haven't had the time/need)
 
 It can:
 - Search recursively through folders (by using `\*` and escape characters in the folder search)
 - Copy the files to a target folder (this can be useful when searching recursively, to collect all files/images in one place for a later check)
 - Customize output (print filename, setpoint, size/speed, etc.)
+
+It is designed for Nanonis .SXM files/metadata (so also after saving them as .gwy), but **can be adapted** to other formats (I have never needed this, but if you do, I'd be glad to hear about it: I'd like to make it into a 'modular' search script)
 
 The first part of the file contains the options/customizations available, with comments that should make them understandable:
 ```python
