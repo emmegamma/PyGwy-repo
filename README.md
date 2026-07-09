@@ -54,8 +54,8 @@ Note: they are **untested** unless otherwise stated
 ### Contributed
 - [MohamedAzizAllani/AutoProcess_plugin-Gwyddion](https://github.com/MohamedAzizAllani/AutoProcess_plugin-Gwyddion): a full, great plugin equipped with GUI to apply several operations (color gradient and range, crop, renaming, or even custom macros) to a series of files or channels to be selected. 
 <br> Tested and working on Gwyddion 2.69
-- [rohanplatts/Python-in-Gwyddion](https://github.com/rohanplatts/Python-in-Gwyddion): not really PyGwy, but a very useful tool: a Gwyddion module that executes any python script in any python environment of your choice (e.g. installed with conda/anaconda: so also python 3), in Gwyddion. The script is executed on the open image, and reads the output back in Gwyddion. It's compiled for Windows 64bit only, but that means having some python available also in 64bit installations
-- [rohanplatts/nanonis-file-conversion](https://github.com/rohanplatts/nanonis-file-conversion): also not really, but possibly useful: scripts to convert Nanonis .dat files (human-readable) to both .sxm (Gwyddion-readable) and .jpg
+- [rohanplatts/Python-in-Gwyddion](https://github.com/rohanplatts/Python-in-Gwyddion): not really PyGwy, but very useful: a Gwyddion module that executes any python script in any python environment of your choice (e.g. installed with conda/anaconda: so also python 3). The script is executed on the open image, and reads the output back in Gwyddion. It's compiled for Windows 64bit only, but that means having some python available also in 64bit installations
+- [rohanplatts/nanonis-file-conversion](https://github.com/rohanplatts/nanonis-file-conversion): also not really PyGwy, but possibly useful: scripts to convert Nanonis .dat files (human-readable) to both .sxm (Gwyddion-readable) and .jpg
 
 
 ### Other scripts in GitHub
