@@ -35,7 +35,7 @@ filetype = '.sxm'
 The script can also run as standalone in Python: the required libraries are loaded in the first lines of the file, just make sure Gwyddion's install folder is correct
 
 ### batch_export_to_image
-A script to export .gwy (or .sxm) files in a folder to images, inspired by kugatomodai/gwyddion_convert_many_files (see the repo list). 
+A script to export .gwy (or .sxm) files in a folder to images, inspired by kugatomodai/gwyddion_convert_many_files (see the repo list below). 
 
 The filetype/extension of the images is `.jpg` by default but customizable in variable `imagefile`, line 76.
 
