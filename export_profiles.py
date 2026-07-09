@@ -7,16 +7,16 @@ import glob
 ######### OPTIONS ##########
 ############################
 
-## Run blank search (0), or write the profile .txt files (1)
+## Run blank (0), or write the profile .txt files (1)
 write_profiles = 0 
 
-## Filter: 0 to print/write all profiles, otherwise the number of the profile 
-## The number is NOT the Graph title (necessarily), but rather the order shown in the Data Browser
-## You can uncomment #print ascii[0:9] later in this file to help associating number/title if needed
-only_prof = 2 # 0 to print them all
+## Filter: 0 to print/write all profiles, otherwise the number of the profile to be written
+## This is NOT the Graph title, but rather the order shown in the Data Browser (might coincide, but not often)
+## If in doubt, run blank (0 above) and uncomment #print ascii[0:9] below in this file to help associating number/title
+only_prof = 2
 
-## Export the profiles for all open files (line 1) or active file only (line 2)
-## (uncomment as needed)
+## Uncomment as needed:
+## export the profiles for all open files (line 1) or active file only (line 2)
 files = gwy.gwy_app_data_browser_get_containers() # all open files
 #files = [gwy.gwy_app_data_browser_get_current(gwy.APP_CONTAINER)] # only active file
 
@@ -25,7 +25,7 @@ files = gwy.gwy_app_data_browser_get_containers() # all open files
 ####### SCRIPT START #######
 ############################
 
-# iterate through open files (containers)
+# iterate through files/containers
 for c in files:
     # get the folder and print the filename
     stmfile = gwy_file_get_filename_sys(c)
@@ -40,6 +40,7 @@ for c in files:
     print 'Folder: {}'.format(folder)
     print 'File: ' + filename#, ' and ', filename == stmfile#stmfile[0:-4]
     #print gwy_app_data_browser_get_graph_ids(c)
+    
     if len(graphlist) != 0:
         print "Found {} profiles:".format(len(graphlist))
         
@@ -63,14 +64,19 @@ for c in files:
             ## Very brute ouput
             #print ascii[0:9] # print name of the specific profile in a graph ("Profile XX")
             #print ascii[8] # print only the number XX of it (single digit)
-            print '  {}: {}'.format(prof_title,prof_string) # print Graph title and corresponding output filename _prof_xx
+            #print graph.title, type(ascii), len(ascii)
+			#print prof_name
+			#print ascii[0:9] # "Profile XX"
+			#print ascii[8] # profile nr in graph
+			#print '{0}: {1}'.format(prof_title.rstrip(' '),prof_string)
+            print '  {0}: {1}'.format(prof_title, prof_string) # print Graph title and corresponding output filename _prof_xx
             
             
             ## Write the profiles as OriginalFileName_prof_xx.txt
             if write_profiles:
               if only_prof==0 or only_prof==i:
                 # Save to text file (name is stmfile + _prof + i)
-      		only_prof_str = prof_string # for closing message
+                only_prof_str = prof_string # for closing message
                 prof_file = stmfile[0:-4] + prof_string + '.txt'
                 f= open(prof_file, 'w')
                 f.write(ascii)
