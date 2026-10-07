@@ -25,17 +25,20 @@ elif os.name == 'posix':
 
 # Set folder(s) and filetype to search (use */* for recursive searches) 
 folder = r'C:\Users\STM\Documents\DATA\atomic res\P148'
-#filetype = '.gwy' 
+filetype = '.gwy' 
 #filetype = '.sxm'
-filetype = 'both'
+#filetype = 'both'
 
 # Filter on the filename (keep between ' '; for syntax and wildcards see https://pymotw.com/2/glob/)
-filter_filename = '*' 
+filter_filename = '*'
 
-# OVERWRITE: set to 1 to allow overwrite, 0 to skip existing files
-overwrite = 1
+# IMAGE TYPE
+extension = '.jpg' 
 
-# DRY RUN: set to 1 to test without actually writing files
+# OVERWRITE: 1 to allow overwrite, 0 skips existing files
+overwrite = 0
+
+# DRY RUN: 1 to test without writing files, 0 to actually run
 dry_run = 0
 
 ############################
@@ -44,7 +47,7 @@ dry_run = 0
 
 # Change the working directory (os.getcwd() to check)
 os.chdir(folder)
-print 'Working dir: ' + os.getcwd()
+print 'Dir: ' + os.getcwd()
 
 ### search file by name and extension
 if filetype == '.gwy' or filetype == '.sxm':
@@ -59,15 +62,13 @@ not_overwritten = []
  
 
 if len(filelist) != 0:
-  #filelist.sort()
   for stmfile in filelist:
   
     ## Get filename/number
     # split the full path into a list, the last element is the filename
     path_as_list = stmfile.split(split_char)
     filename = path_as_list[-1]
-    filebase = filename[0:-4]
-    imagefile = filebase + '.jpg'
+    imagefile = filename[0:-4] + extension
     
     if os.path.exists(imagefile) == False:
       output_text = 'Writing '
@@ -77,8 +78,7 @@ if len(filelist) != 0:
       else:
     	not_overwritten.append(imagefile)    
     	continue
-      
-    
+              
     ## Get current file and add them to the data browser
     container = gwy.gwy_file_load(stmfile, gwy.RUN_INTERACTIVE)
     gwy.gwy_app_data_browser_add(container)
@@ -86,25 +86,26 @@ if len(filelist) != 0:
     # if not in dry run, save first channel to image
     if dry_run == 0:
       gwy.gwy_app_data_browser_select_data_field(container, 0)
-      if stmfile==filelist[0]: #at first iteration, run interactive to set image params
+      if stmfile == filelist[0]: # if first file, run_interactive to set image params for the batch
         gwy.gwy_file_save(container, imagefile, RUN_INTERACTIVE)
       else:
         gwy.gwy_file_save(container, imagefile, RUN_NONINTERACTIVE)
     
     # Remove the container from the data browser
     gwy.gwy_app_data_browser_remove(container)
-   
-    # Print operation
-    print output_text + imagefile # + folder + split_char
+    	
+    print 'Found ' + filename + ' : ' + output_text + extension + ' file'
     
-else: ### if no files were found (len(filelist)== 0)  
+else: ### if len(filelist)== 0
   print 'No suitable files found in {}, check folder/filters'.format(folder)
 
-# list NOT overwritten files
+# list not overwritten files
 if len(not_overwritten) != 0:
-    print '\nFiles skipped (overwrite = 0):'
-    for i in not_overwritten:
-        print ' {}'.format(i)
+    print '\nFiles skipped (no overwrite):'
+    print not_overwritten
+    ## longer version (one per line):
+    #for i in not_overwritten:
+    #    print ' {}'.format(i)
 
 # if dry_run, say it
 if dry_run == 1:
